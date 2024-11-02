@@ -1,0 +1,40 @@
+/* Loader.module.css */
+.loader {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  z-index: 9999; /* Ensure the loader is on top of other content */
+}
+
+.loader.visible {
+  display: flex; /* Display loader when visible */
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 6px solid rgba(0, 0, 0, 0.3); /* Light gray border */
+  border-top: 6px solid var(--clr-secondary); /* Blue border on top for spinning effect */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animation for spinning effect */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Starting position */
+  }
+  100% {
+    transform: rotate(360deg); /* Ending position (full circle) */
+  }
+}

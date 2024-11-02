@@ -1,0 +1,37 @@
+.home_note_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 1em 0;
+}
+.cta_container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cta {
+  border-radius: 15px;
+  padding: 0.5em;
+  box-shadow: 0px 0.917px 1.29px -0.583px rgba(0, 0, 0, 0.2),
+    0px 2px 3.166px 0.25px rgba(0, 0, 0, 0.14),
+    0px 0.75px 3.832px 0.667px rgba(0, 0, 0, 0.12);
+  flex: 1;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: auto;
+  text-align: center;
+  background: url('../../assests/wave.svg');
+  background-repeat: no-repeat;
+}
+.cta > p {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-semi-bold);
+}
+.cta > img {
+  height: 130px;
+}

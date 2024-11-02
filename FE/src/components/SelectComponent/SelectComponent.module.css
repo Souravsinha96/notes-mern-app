@@ -1,0 +1,103 @@
+.container {
+  position: relative;
+  min-width: 20em;
+  min-height: 2.5em;
+  border: 0.05em solid var(--clr-black);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  outline: none;
+}
+
+.container:focus {
+  border-color: var(--clr-secondary);
+}
+
+.value {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.clear-btn {
+  background: none;
+  color: var(--clr-black);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+.divider {
+  background-color: var(--clr-black);
+  /* so that divider strech full size, due to min height, height 100% will not work as it willnot know how much extactly to stretch */
+  align-self: stretch;
+  width: 0.05em;
+}
+.caret {
+  translate: 0 25%;
+  border: 0.25em solid transparent;
+  border-top-color: var(--clr-black);
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+  color: var(--clr-secondary);
+}
+
+.options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border-radius: 0.25em;
+  border: 0.05em solid var(--clr-black);
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: var(--clr-white);
+  z-index: 100;
+}
+.options.show {
+  display: block;
+}
+.option {
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+.option.selected {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+}
+.option.highlighted {
+  background-color: rgb(135, 155, 194);
+  color: var(--clr-white);
+}
+.option-badge {
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+  border: 0.05em solid var(--clr-black);
+  border-radius: 0.25em;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  font-size: var(--fs-button);
+}
+.option-badge:hover,
+.option-badge:focus {
+  border-color: var(--clr-error);
+}
+.option-badge:focus > .remove-btn,
+.option-badge:hover > .remove-btn {
+  color: var(--clr-error);
+}
+.option-badge > .remove-btn {
+  font-size: 1.25em;
+  color: var(--clr-black);
+}

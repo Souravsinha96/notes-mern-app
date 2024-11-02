@@ -1,0 +1,56 @@
+.container {
+  border-radius: 5px;
+  padding: 0.5em;
+  flex: 1 1 300px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: all 0.2s ease-in;
+  height: 250px;
+  overflow-y: auto;
+  box-shadow: 0px 0.917px 1.29px -0.583px rgba(0, 0, 0, 0.2),
+    0px 2px 3.166px 0.25px rgba(0, 0, 0, 0.14),
+    0px 0.75px 3.832px 0.667px rgba(0, 0, 0, 0.12);
+  background: url('../../assests/wave.svg');
+  background-repeat: no-repeat;
+  background-color: var(--clr-white);
+  background-size: cover;
+}
+
+.container:hover {
+  box-shadow: 2px 2px 40px hsl(248 15.7% 80% / 0.5);
+}
+.title {
+  font-family: var(--ff-accent);
+}
+.badge {
+  border-radius: 5px;
+  padding: 0.3em 0.4em;
+  text-transform: uppercase;
+  border: 2px solid var(--clr-secondary);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-400);
+  max-width: max-content;
+}
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-self: end;
+}
+
+.indicator {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-error);
+  padding: 0.4em;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-500);
+  color: var(--clr-white);
+  border-radius: 5px 0 0 5px;
+}

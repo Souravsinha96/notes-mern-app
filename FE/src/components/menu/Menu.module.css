@@ -1,0 +1,17 @@
+.menu_container {
+  position: absolute;
+  border: 1px solid black;
+  padding: 0.4em;
+  right: 0;
+  background-color: var(--clr-white);
+  top: 3em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 100;
+}
+.menu_container > ul {
+  list-style: none;
+  margin: 0;
+}

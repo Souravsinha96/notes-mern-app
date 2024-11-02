@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  border-radius: 5px;
+  padding: 0.25em 0.4em;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-semi-bold);
+}
+.container > svg {
+  cursor: pointer;
+}
+.tagBtn {
+  padding: 0;
+  border: 0;
+  background: none;
+  display: flex;
+  color: #ffffff;
+  cursor: pointer;
+}

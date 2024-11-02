@@ -1,0 +1,38 @@
+.tags-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tags-container-wrapper button {
+  align-self: flex-end;
+}
+.tags-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.delete {
+  width: 100px;
+}
+.delete div {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.tags-table th,
+.tags-table td {
+  border: 1px solid var(--clr-black);
+  padding: 8px;
+}
+
+.tags-table th {
+  background-color: var(--clr-primary);
+}
+
+.notes-list {
+  padding-left: 20px;
+  margin: 0;
+}
+.tags-table .tag-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

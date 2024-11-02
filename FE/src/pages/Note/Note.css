@@ -1,0 +1,35 @@
+.note_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.note_container .userBtn {
+  display: flex;
+  justify-content: space-between;
+}
+.userBtn .btnGroup {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+.note_container .noteBody {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.note_container .tagsUsed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.note_container .importantNote {
+  margin-left: 1rem;
+  font-family: var(--ff-accent);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: var(--clr-error);
+  color: var(--clr-white);
+  padding: 1px 10px;
+  border-radius: 50px;
+}

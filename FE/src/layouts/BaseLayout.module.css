@@ -1,0 +1,15 @@
+.base_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body_container {
+  flex: 1;
+  max-width: 1400px;
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 1em auto;
+  padding: 0.5em;
+  overflow-y: auto;
+}

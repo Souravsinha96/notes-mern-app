@@ -1,0 +1,69 @@
+.header_container {
+  height: 4.5rem;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 0.3em;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: var(--clr-white);
+}
+.header_container > img {
+  width: 6rem;
+  height: 4rem;
+  align-self: flex-start;
+}
+.header_container > div {
+  display: flex;
+}
+.nav_container {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-nav);
+}
+.nav_container > li {
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+  color: var(--clr-black);
+}
+.nav_container > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav_container > li:has(.active) {
+  cursor: pointer;
+  background-color: var(--clr-black);
+  opacity: 0.7;
+  border-radius: 5px;
+  color: var(--clr-white);
+}
+
+/* skip link */
+.skip_link {
+  position: absolute;
+  top: -46px;
+  left: 245px;
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  font-size: var(--fs-400);
+  padding: 0.9em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Hide the link by default and show it when focused */
+.skip_link:focus {
+  top: 20px;
+}
+
+@media screen and (max-width: 55em) {
+  .nav_container {
+    display: none;
+  }
+  .header_container > img {
+    width: 10rem;
+  }
+}

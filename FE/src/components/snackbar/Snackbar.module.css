@@ -1,0 +1,36 @@
+.snackbar {
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px; /* Adjust width as needed */
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+  font-size: var(--ff-medium);
+}
+
+.snackbar.open {
+  display: flex;
+}
+
+.message {
+  flex-grow: 1;
+  margin-right: 10px; /* Add some space between message and close button */
+}
+
+.close_btn {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.close_btn:focus {
+  box-shadow: 0 0 0 2px #fff; /* Add a white box shadow when the close button is focused */
+}

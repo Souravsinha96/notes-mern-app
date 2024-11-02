@@ -1,0 +1,30 @@
+.loader_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+}
+
+.loader {
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--clr-secondary),
+    var(--clr-secondary) 50%,
+    transparent 50%,
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: topLinearLoader 2s linear infinite;
+}
+
+@keyframes topLinearLoader {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
