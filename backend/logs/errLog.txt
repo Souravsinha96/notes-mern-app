@@ -1,0 +1,17 @@
+20240817	23:45:50	9e2c5415-4b42-4440-a5e2-805934c78bc8	Error: Not allowed by CORS
+20240817	23:45:50	f8ab698d-f572-4bc1-bc1e-55f51b2cfc23	Error: Not allowed by CORS
+20240817	23:45:50	8329d65c-e391-4a7d-8283-ed564848553c	Error: Not allowed by CORS
+20240817	23:45:53	262aad42-1c0a-495f-afcf-d45a0cbbe846	Error: Not allowed by CORS
+20240817	23:45:53	83716383-206f-492c-94cf-46ea9689547a	Error: Not allowed by CORS
+20240817	23:45:53	88267b19-b5e0-43dd-8fcc-e5fa8d8e2a5a	Error: Not allowed by CORS
+20240817	23:45:54	a6ff130a-04af-47a8-aea8-ffe61183533d	Error: Not allowed by CORS
+20240817	23:45:54	744f0b41-07e1-46c5-99c3-d45dc9842e93	Error: Not allowed by CORS
+20240817	23:45:54	5414bbbb-aeee-422a-8bbc-984ad8c6b529	Error: Not allowed by CORS
+20240817	23:45:55	c0c4d524-713d-470f-a964-22edf74f7f8f	Error: Not allowed by CORS
+20240817	23:45:55	8b246685-822d-4743-9108-398f93af3b06	Error: Not allowed by CORS
+20240817	23:45:55	4980fc0f-237b-4630-b408-63d28e5002ce	Error: Not allowed by CORS
+20240817	23:45:56	eec78074-22c4-4fd0-83bd-cfebfa13b0e0	Error: Not allowed by CORS
+20240817	23:45:56	0ed69a78-ec68-4760-8a72-19a3b17ae997	Error: Not allowed by CORS
+20240817	23:45:56	db808840-01e1-4afc-b2b7-47b150a876e5	Error: Not allowed by CORS
+20240824	23:56:37	1a614826-b9bc-4589-89be-2a35ee236184	SyntaxError: Unexpected token 
+ in JSON at position 75
