@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3500';
+const BASE_URL = 'https://notes-mern-app-ofsy.onrender.com';
 
 export const customAxios = axios.create({
   baseURL: BASE_URL,
