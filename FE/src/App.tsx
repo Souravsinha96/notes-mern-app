@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './App.css';
 import Routes from './routes/Route';
 import Loadable from './hoc/Lodable';
@@ -9,11 +9,11 @@ const StyledSnackbar = Loadable(
 );
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes />
       <StyledSnackbar />
       <Loader />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
